@@ -7,106 +7,187 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ola, sou TEOBALDO</h1>
+ <body>
+  <style>
+
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 20%;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 30%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 5.5em 'Montserrat';
+    width: 700px;
+    height: 360px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 3% 10%;
+    stroke-width: 4px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 4.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #310424;
+	animation-delay: 1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #008442;
+	animation-delay: -1s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #00a1bd;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #470d1d;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #3178fd;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+  </style>
+	
+
+
+  <div class="container">
+  <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="60%" y="90%">ola, sou teobaldo </text>
+                                            
+      
+
+
+    </symbol>
+
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+</div>
     
-
-    
-    <div class="conteiner">
-        <div class=="menu">
-            
-                
-                    
-               
-                
-            
-            <title>Section links</title>
-  
-    <style>
-        * {
-            margin: 10;
-            padding: 10;
-        }
-          
-        body {
-            width: 100vw;
-            height: 100vh;
-        }
-          
-        .section {
-            width: 20vw;
-            height: 90vh;
-            background-color: #EF5354;
-            font-size: 30px;
-            color: white;
-            text-align: center;
-            margin: 30px 15px;
-        }
-          
-        .one{
-            background: #75177e;
-        }
-        .three {
-            background-color: #E03B8B;
-        }
-          
-        .nav {
-            width: 100vw;
-            height: 50vh;
-            background-color: black;
-            font-size: x-large;
-            color: white;
-            text-align: center;
-            margin: 60px 60px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            place-items: center;
-        }
-          
-        .btn {
-            color: white;
-            background-color: rgb(43, 144, 226);
-            height: 50px;
-            width: 200px;
-            padding: 2px;
-            border: 2px solid rgb(220, 230, 233);
-            text-decoration: none;
-            display: flex;
-            flex-wrap: wrap;
-            transition: all 0.5s ease;
-            cursor: pointer;
-            an
-        
-
-            
-        }
-
-        </style>
-</head>
-  
-<body>
-    <div class="nav">
-        <a href="#section1" class="btn">sobre min</a>
-        <a href="#section2" class="btn">projetos</a>
-        <a href="#section3" class="btn">contato</a>
-       
-    </div>
-    <div class="section one" id="section1">
-        sobre min
-        <p>olá sou Teobaldo tenho graduação tecnológica em computação, desenvolvo codigos em front end e busco uma vaga para iniciante na aréa.</p>
-    </div>
-    <div class="section two" id="section2">
-        projetos
-         <p>Um link para o meu <a href="https://github.com/teobaldotech/form"> projeto </a>.</p>
-
-
-    </div>
-    <div class="section three" id="section3">
-        contato
-         <p>Um link para o site <a href="https://github.com"> click aqui </a>.</p>
-    </div>
-   
-    </div>
 </body>
-  
+//css
+<style>
+    * {
+        margin: 10;
+        padding: 10;
+    }
+      
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+      
+    .section {
+        width: 20vw;
+        height: 90vh;
+        background-color: #EF5354;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin: 30px 15px;
+    }
+      
+    .one{
+        background: #75177e;
+    }
+    .three {
+        background-color: #E03B8B;
+    }
+      
+    .nav {
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        font-size: x-large;
+        color: white;
+        text-align: center;
+        margin: 60px 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        place-items: center;
+    }
+      
+    .btn {
+        color: white;
+        background-color: rgb(43, 144, 226);
+        height: 50px;
+        width: 200px;
+        padding: 2px;
+        border: 2px solid rgb(220, 230, 233);
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        an
+    
+
+        
+    }
+
+    </style>
+</head>
+
+<body>
+<div class="nav">
+    <a href="#section1" class="btn">sobre min</a>
+    <a href="#section2" class="btn">projetos</a>
+    <a href="#section3" class="btn">contato</a>
+   
+</div>
+<div class="section one" id="section1">
+    sobre min
+    <p>olá sou Teobaldo tenho graduação tecnológica em computação, desenvolvo codigos em front end e busco uma vaga para iniciante na aréa.</p>
+</div>
+<div class="section two" id="section2">
+    projetos
+     <p>Um link para o meu <a href="https://github.com/teobaldotech/form"> projeto </a>.</p>
+
+
+</div>
+<div class="section three" id="section3">
+    contato
+     <p>Um link para o site <a href="https://github.com"> click aqui </a>.</p>
+</div>
+
+</div>
+</body>
+
 </html>
